@@ -1,0 +1,57 @@
+h2 {
+  color: #E84E0F;
+  text-align: center;
+  padding: 45px 0;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+h3 {
+  color: #E84E0F;
+  font-size: 25px;
+}
+
+input, select {
+  border-color: #3C3C3B;
+  border-radius: 0;
+}
+
+small {
+  color: #3C3C3B;
+}
+
+.mycontent-left {
+  border-left: 2px solid #E84E0F;
+}
+
+.leftside {
+  padding-left: 50px;
+  padding-right: 0;
+}
+
+.rightside {
+  padding-left: 40px;
+  padding-right: 0;
+}
+
+ .row {
+   max-width: 100%;
+ }
+
+small {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+div {
+  margin-bottom: 0;
+}
+
+#botao {
+  background-color: #E84E0F;
+  color: white;
+  border-color: #E84E0F;
+  padding: 7px;
+  width: 130px;
+  border-radius: 0;
+}
