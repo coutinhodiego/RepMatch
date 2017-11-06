@@ -1,104 +1,71 @@
 <span class="container">
-  <h2>entrar</h2>
   <div class="row leftside d-flex justify-content-center">
-    <!-- Começo do campo de login ('tem cadastro?') -->
+    <!-- Começo do campo de dúvidas -->
     <div class="col-6">
-
-      <h3>tem cadastro?</h3>
-      <form class="row">
-        <div class="form-group col-md-10">
-          <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text">login</small>
+      <h3 class="text-right px-4">dúvidas?</h3>
+      <form>
+        <div class="row justify-content-end">
+          <div class="col-md-6 col-sm-12">
+            <small id="emailHelp" class="form-text">escolha o tipo de dúvida</small>
+            <select class="custom-select mb-2 mr-sm-2 mb-sm-0">
+              <option selected>Escolha aqui...</option>
+              <option value="1">Não consegui contato com a república</option>
+              <option value="2">Não consegui inserir meu anúncio</option>
+              <option value="3">Outro</option>
+            </select>
+          </div>
         </div>
-        <div class="form-group col-md-7">
-          <input type="password" class="form-control" id="inputPassword1">
-          <small id="emailHelp" class="form-text">senha</small>
+        <div class="row justify-content-end">
+          <div class="col-md-6 col-sm-12">
+            <small class="form-text greytext">nome</small>
+            <input type="text" class="form-control">
+          </div>
         </div>
-        <div class="col-md-7">
-          <button type="submit" class="btn btn-primary" id="botao">logar</button>
+        <div class="row justify-content-end">
+          <div class="col-md-6 form-group col-xs-12">
+            <small class="form-text">e-mail</small>
+            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-md-8 col-sm-12 py-3">
+            <textarea name="Mensagem" rows="5" cols="53" placeholder="Escreva aqui sua dúvida"></textarea>
+          </div>
+        </div>
+        <div class="row text-right">
+          <div class="col">
+            <button type="button" class="btn btn-primary justify-content-end" id="botao">Enviar</button>
+          </div>
         </div>
       </form>
     </div>
 
-    <!-- Começo do campo de cadastro ('ainda não tem?') -->
+    <!-- Começo do campo de quem somos -->
     <div class="col-6 mycontent-left rightside">
-      <h3>ainda não tem?</h3>
-
-      <form>
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <input type="text" class="form-control">
-            <small class="form-text greytext">nome</small>
-          </div>
-          <div class="col-md-3 col-sm-12">
-            <select class="custom-select mb-2 mr-sm-2 mb-sm-0">
-              <option selected>Escolha...</option>
-              <option value="1">Feminino</option>
-              <option value="2">Masculino</option>
-              <option value="3">N/A</option>
-            </select>
-            <small id="emailHelp" class="form-text">gênero</small>
-          </div>
+      <h3>quem somos?</h3>
+      <form class="row">
+        <div class="form-group col-md-12">
+          <p class="m-0">RepMatch Brasil</p>
+          <p class="mb-4">São Paulo/SP</p>
         </div>
+        <div class="col-md-12">
+          <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Email-icon.png" alt="" class="email-img d-inline">
+          <span class="contato">Contatos</span>
+          <div class="p-1">
+            <a href="mailto:alana.ceccato@docontrol.com.br">Alana Ceccato</a>
+          </div>
+          <div class="p-1">
+            <a href="mailto:diegocoutinho@gmail.com">Diego Coutinho</a>
+          </div>
+          <div class="p-1">
+            <a href="mailto:jessica.itami@gmail.com">Jéssica Itami</a>
+          </div>
+          <div class="p-1">
+            <a href="mailto:michele.gl35@gmail.com">Michele Gonçalves</a>
+          </div>
 
-        <div class="row">
-          <div class="col-md-6 form-group col-xs-12">
-            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
-            <small class="form-text">e-mail</small>
-          </div>
-          <div class="col-md-4 col-xs-12">
-            <input type="text" class="form-control">
-            <small class="form-text">telefone</small>
-          </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-6 col-xs-12 form-group">
-            <input type="password" class="form-control">
-            <small class="form-text">senha</small>
-          </div>
-        </div>
-
-
-        <!-- <p>
-          <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false"
-           aria-controls="multiCollapseExample1">Estou em busca de uma república</a>
-        </p>
-        <div class="row">
-          <div class="col">
-            <div class="collapse multi-collapse" id="multiCollapseExample1">
-              <div class="card card-body">
-                <div class="collapse" id="collapseExample">
-                    <div class="row">
-                      <div class="col-md-3 col-xs-12 col-sm-12">
-                        <input type="text" class="form-control">
-                        <small class="form-text">bairro</small>
-                      </div>
-                      <div class="col-md-2 col-xs-12">
-                        <input type="number" class="form-control">
-                        <small class="form-text">vagas</small>
-                      </div>
-                      <div class="col-md-5 col-xs-12">
-                        <input type="text" class="form-control">
-                        <small class="form-text">valor máximo por vaga</small>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-
-
-
-
-
-
-
-        <button type="submit" class="btn btn-primary" id="botao">cadastrar</button>
       </form>
-
     </div>
   </div>
 </span>
