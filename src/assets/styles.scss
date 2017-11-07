@@ -1,0 +1,30 @@
+@import "cores";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+h2 {
+  color: $theme-button-orange;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+
+.btn-repmatch{
+  background-color: $theme-button-orange;
+  color: white;
+}
+
+
+.labelNome{
+  color: $theme-button-orange;
+  font-weight: 500;
+}
+
+.card-img-repmatch{
+  width: 100%;
+  height: 35vh;
+}
+
+.card-img-repmatch-matches{
+  width: 100%;
+}
