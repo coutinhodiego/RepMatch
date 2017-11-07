@@ -1,43 +1,42 @@
-<h3>anunciarep</h3>
+<h2>anuncia<span class="labelNome">rep</span></h2>
 <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Nome da Republica</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="modelo.nome" placeholder="Nome da Republica" name="nome">
+  <div class="row">
+    <div class="col-md-8">
+      <label>Nome da Republica</label>
+      <input type="text" class="form-control" [(ngModel)]="modelo.nome" placeholder="Nome da Republica" name="nome">
+    </div>
+    <div class="col-md-4">
+      <label>Telefone</label>
+      <input type="text" class="form-control" [(ngModel)]="modelo.telefone" placeholder="Telefone" name="telefone">
+    </div>
+    <div class="form-group col-md-8">
+      <label>Endereço</label>
+      <input type="text" class="form-control" [(ngModel)]="modelo.endereco" placeholder="Endereço" name="endereco">
+    </div>
+    <div class="form-group col-md-4">
+      <label>Bairro</label>
+      <input type="text" class="form-control"  [(ngModel)]="modelo.bairro" placeholder="Bairro" name="bairro">
+    </div>
+    <div class="form-group col-md-6">
+      <label>Vagas disponiveis</label>
+      <select class="form-control" [(ngModel)]="modelo.vagas" name="vagas">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <div class="form-group col-md-6">
+      <label>Valor</label>
+      <input type="text" class="form-control" [(ngModel)]="modelo.valor"  name="valor">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="exampleFormControlTextarea1">Descrição</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" [(ngModel)]="modelo.descricao" rows="3" name="descricao"></textarea>
+    </div>
+    <div class="form-group col-md-12 text-right">
+      <button type="submit" (click)="salvar()" class="btn btn-primary">Entrar</button>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Telefone</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="modelo.telefone" placeholder="Telefone" name="telefone">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Endereço</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="modelo.endereco" placeholder="Endereço" name="endereco">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Bairro</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" [(ngModel)]="modelo.bairro" placeholder="Bairro" name="bairro">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Descrição</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" [(ngModel)]="modelo.descricao" rows="3" name="descricao"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Vagas disponiveis</label>
-    <select class="form-control" id="exampleFormControlSelect1" [(ngModel)]="modelo.vagas" name="vagas">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Valor</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="modelo.valor" placeholder="Nome da Republica" name="valor">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Senha</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
-  </div>
-
-  <button type="submit" (click)="salvar()" class="btn btn-primary">Entrar</button>
 </form>
