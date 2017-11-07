@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 
 const AjudaSchema = require('../server/model/ajudaSchema');
 const RepublicaSchema = require('../server/model/republicaSchema');
-const BuscaSchema = require('../server/model/buscaSchema');
 
 mongoose.connect('mongodb://localhost/repmatch');
 
@@ -15,13 +14,9 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-});
-
+//rotas
 app.post('/match/republicas', (req, res) =>{
   let query = req.body;
-  // let query = new BuscaSchema(req.body);
   console.log(query);
   RepublicaSchema.find(query, (err, response) => {
     if(err){
@@ -30,6 +25,7 @@ app.post('/match/republicas', (req, res) =>{
     res.send(response);
   })
 });
+
 app.get('/republicas', (req, res) =>{
   RepublicaSchema.find((err, response) => {
     if(err){
@@ -73,7 +69,7 @@ app.post('/ajuda', (req, res) => {
 })
 
 
-
+//ouvindo o servidor
 app.listen(3000, () => {
   console.log('Example app listening on port 3000!')
 });
