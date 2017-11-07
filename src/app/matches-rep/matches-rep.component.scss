@@ -1,3 +1,26 @@
 .content {
   width: 90%;
 }
+
+.imgModal {
+  max-height: 300px;
+  width: auto;
+  max-width: 100%;
+}
+
+label, .bold {
+  font-weight: bold;
+}
+
+#botao {
+  background-color: #E84E0F;
+  color: white;
+  border-color: #E84E0F;
+  padding: 7px;
+  width: 130px;
+  border-radius: 0;
+}
+
+.btn-secondary {
+  border-radius: 0;
+}

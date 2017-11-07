@@ -1,80 +1,80 @@
-  <div class="p-0 d-flex align-content-md-center">
-    <!-- Começo do campo de dúvidas -->
-    <div class="col-xs-12 col-md-6">
-      <h3 class="text-right px-4">dúvidas?</h3>
-      <form>
-          <div class="col-12 align-text-right">
-            <small id="emailHelp" class="form-text">Escolha o tipo de dúvida</small>
-            <select class="custom-select">
-              <option selected>Escolha aqui...</option>
-              <option value="1">Não consegui contato com a república</option>
-              <option value="2">Não consegui inserir meu anúncio</option>
-              <option value="3">Outro</option>
-            </select>
-          </div>
-          <div class="col-12">
-            <small class="form-text greytext">nome</small>
-            <input type="text" class="form-control">
-          </div>
-          <div class="col-12">
-            <small class="form-text">e-mail</small>
-            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="col-xs-12 col-md-12 col-sm-12 py-3">
-            <textarea name="Mensagem" placeholder="Escreva aqui sua dúvida"></textarea>
-          </div>
-          <div class="col-12">
-            <button class="btn btn-primary justify-content-end" id="botao"
-            data-toggle="modal" data-target="#emailModal">Enviar</button>
-          </div>
-      </form>
+<div class="p-0 d-flex align-content-md-center">
+  <!-- Começo do campo de dúvidas -->
+  <div class="col-xs-12 col-md-6">
+    <h3 class="text-right px-4">dúvidas?</h3>
+    <form>
+      <div class="col-12 align-text-right">
+        <small id="emailHelp" class="form-text">escolha o tipo de dúvida</small>
+        <select class="custom-select">
+          <option selected>Escolha aqui...</option>
+          <option value="1">Não consegui contato com a república</option>
+          <option value="2">Não consegui inserir meu anúncio</option>
+          <option value="3">Outro</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <small class="form-text greytext">nome</small>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-12">
+        <small class="form-text">e-mail</small>
+        <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="col-xs-12 col-md-12 col-sm-12 py-3">
+        <textarea name="Mensagem" placeholder="Escreva aqui sua dúvida"></textarea>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary justify-content-end" id="botao"
+        data-toggle="modal" data-target="#emailModal">Enviar</button>
+      </div>
+    </form>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="E-mail enviado." aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <h3>Sua dúvida foi enviada!</h3>
+          <p>Obrigado por entrar em contato conosco, responderemos logo.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
     </div>
-<!-- Modal -->
-<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="E-mail enviado." aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+  </div>
+
+  <!-- Começo do campo de quem somos -->
+  <div class="col-xs-12 col-md-6 mycontent-left rightside">
+    <h3>quem somos?</h3>
+    <form class="row">
+      <div class="form-group col-md-12">
+        <p class="m-0">RepMatch Brasil</p>
+        <p class="mb-4">São Paulo/SP</p>
       </div>
-      <div class="modal-body text-center">
-        <h3>Sua dúvida foi enviada!</h3>
-        <p>Obrigada por entrar em contato conosco, responderemos logo.</p>
+      <div class="col-md-12">
+        <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Email-icon.png" alt="" class="email-img d-inline">
+        <span class="contato">Contatos</span>
+        <div class="p-1">
+          <a href="mailto:alana.ceccato@docontrol.com.br">Alana Ceccato</a>
+        </div>
+        <div class="p-1">
+          <a href="mailto:diegocoutinho@gmail.com">Diego Coutinho</a>
+        </div>
+        <div class="p-1">
+          <a href="mailto:jessica.itami@gmail.com">Jéssica Itami</a>
+        </div>
+        <div class="p-1">
+          <a href="mailto:michele.gl35@gmail.com">Michele Gonçalves</a>
+        </div>
+
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      </div>
-    </div>
+    </form>
   </div>
 </div>
-
-    <!-- Começo do campo de quem somos -->
-    <div class="col-xs-12 col-md-6 mycontent-left rightside">
-      <h3>quem somos?</h3>
-      <form class="row">
-        <div class="form-group col-md-12">
-          <p class="m-0">RepMatch Brasil</p>
-          <p class="mb-4">São Paulo/SP</p>
-        </div>
-        <div class="col-md-12">
-          <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Email-icon.png" alt="" class="email-img d-inline">
-          <span class="contato">Contatos</span>
-          <div class="p-1">
-            <a href="mailto:alana.ceccato@docontrol.com.br">Alana Ceccato</a>
-          </div>
-          <div class="p-1">
-            <a href="mailto:diegocoutinho@gmail.com">Diego Coutinho</a>
-          </div>
-          <div class="p-1">
-            <a href="mailto:jessica.itami@gmail.com">Jéssica Itami</a>
-          </div>
-          <div class="p-1">
-            <a href="mailto:michele.gl35@gmail.com">Michele Gonçalves</a>
-          </div>
-
-        </div>
-      </form>
-    </div>
-  </div>

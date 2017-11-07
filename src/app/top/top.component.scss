@@ -1,0 +1,38 @@
+.menu-links li{
+  font-family: 'open sans';
+  color: #3C3C3B;
+  text-align: center;
+  padding: 20px 34px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 23px;
+  list-style-type: none;
+  display: inline-block;
+  float: right;
+  vertical-align: middle;;
+}
+
+a.menu:visited, a.menu:link {
+  text-decoration: none;
+  color: #3C3C3B}
+a.menu:hover, a.menu:active {
+  text-decoration:none;
+  color: #E84E0F;
+}
+
+
+
+.nav-wrapper-menu {
+  position: fixed;
+  margin: 0px 20px;
+  padding: 36px 0px;
+  overflow: hidden;
+  background-color: white;
+  width: 95%;
+}
+.logo-repmatch {
+  vertical-align: middle;
+  margin: 0px 20px;
+  padding: 0px 20px;
+  float: left;
+}
