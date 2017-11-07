@@ -19,7 +19,12 @@ app.get('/', (req, res) => {
 });
 
 app.get('/republicas', (req, res) =>{
-  res.send('alguma coisa')
+  RepublicaSchema.find((err, response) => {
+    if(err){
+      return res.send(err, 400)
+    }
+    res.send(response);
+  })
 });
 
 app.post('/anunciarep', (req, res) => {
