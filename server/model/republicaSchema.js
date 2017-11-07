@@ -7,7 +7,7 @@ const RepublicaSchema = mongoose.model('republica', {
   descricao: {type: String, required: true},
   vagas: {type: String, required: true},
   valor: {type: String, required: true},
-  senha: {type: String, required: true}
+  senha: {type: String }
 })
 
 module.exports = RepublicaSchema;

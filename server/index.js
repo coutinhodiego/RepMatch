@@ -4,7 +4,8 @@ const cors = require('cors');
 
 const mongoose = require('mongoose');
 
-const AjudaSchema = require('../server/model/ajudaSchema')
+const AjudaSchema = require('../server/model/ajudaSchema');
+const RepublicaSchema = require('../server/model/republicaSchema');
 
 mongoose.connect('mongodb://localhost/repmatch');
 
@@ -22,7 +23,15 @@ app.get('/republicas', (req, res) =>{
 });
 
 app.post('/anunciarep', (req, res) => {
-  res.send('salvando');
+  let republica = new RepublicaSchema(req.body)
+  console.log(republica);
+  republica.save((err, response) => {
+    if(err){
+      return res.send(err, 400);
+    }else {
+      res.send(response);
+    }
+  })
 })
 
 app.get('/ajuda', (req, res) => {

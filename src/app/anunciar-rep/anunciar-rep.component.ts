@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-anunciar-rep',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnunciarRepComponent implements OnInit {
 
-  constructor() { }
+  modelo = {};
+
+  constructor(private http : HttpClient) { }
 
   ngOnInit() {
+  }
+
+  salvar(){
+    console.log(this.modelo)
+    this.http
+    .post('http://localhost:3000/anunciarep', this.modelo)
+    .subscribe(res => {
+      console.log('Ok!')
+    })
   }
 
 }
