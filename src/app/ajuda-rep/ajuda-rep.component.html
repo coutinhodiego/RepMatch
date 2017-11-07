@@ -1,10 +1,8 @@
 <h3>ajuda</h3>
-<p>1 - Lorem ipsum dolor sit amet, consectetu</p>
-<p>2 - Lorem ipsum dolor sit amet, consectetu</p>
-<p>3 - Lorem ipsum dolor sit amet, consectetu</p>
+<p *ngFor='let pergunta of lista'>{{pergunta.pergunta}}</p>
 <form>
   <div class="form-group">
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Digite sua duvida">
+    <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="modelo.pergunta" name="pergunta" placeholder="Digite sua duvida">
   </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
+  <button (click)='enviar()' type="submit" class="btn btn-primary">Enviar</button>
 </form>
