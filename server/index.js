@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 
 const AjudaSchema = require('../server/model/ajudaSchema');
 const RepublicaSchema = require('../server/model/republicaSchema');
+const BuscaSchema = require('../server/model/buscaSchema');
 
 mongoose.connect('mongodb://localhost/repmatch');
 
@@ -18,6 +19,17 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 });
 
+app.post('/match/republicas', (req, res) =>{
+  let query = req.body;
+  // let query = new BuscaSchema(req.body);
+  console.log(query);
+  RepublicaSchema.find(query, (err, response) => {
+    if(err){
+      return res.send(err, 400)
+    }
+    res.send(response);
+  })
+});
 app.get('/republicas', (req, res) =>{
   RepublicaSchema.find((err, response) => {
     if(err){
