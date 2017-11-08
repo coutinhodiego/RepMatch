@@ -11,6 +11,7 @@ import { MatchesRepComponent } from './matches-rep/matches-rep.component';
 import { AnunciarRepComponent } from './anunciar-rep/anunciar-rep.component';
 import { AjudaRepComponent } from './ajuda-rep/ajuda-rep.component';
 import { FooterComponent } from './footer/footer.component';
+import { BannerRepComponent } from './banner-rep/banner-rep.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     MatchesRepComponent,
     AnunciarRepComponent,
     AjudaRepComponent,
-    FooterComponent
+    FooterComponent,
+    BannerRepComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,46 @@
-<h2 class="labelNome">ajuda</h2>
-<p *ngFor='let pergunta of lista'>{{pergunta.pergunta}}</p>
-<form>
-  <div class="form-group">
-    <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="modelo.pergunta" name="pergunta" placeholder="Digite sua duvida">
+<h2>perguntas <span class="labelNome">frequentes</span></h2>
+<div id="accordion" role="tablist">
+  <div class="card">
+    <div class="card-header repmatch-card-header" role="tab" id="heading1">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+         * Tenho que pagar algo para anunciar?
+        </a>
+      </h5>
+    </div>
+
+    <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1" data-parent="#accordion">
+      <div class="card-body">
+          Não, a nossa equipe não cobra nada no momento para anunciar as Repúblicas, pois queremos facilitar a comunicação dos proprietários com os estudantes.
+      </div>
+    </div>
   </div>
-  <button (click)='enviar()' type="submit" class="btn btn-primary">Enviar</button>
-</form>
+  <div class="card">
+    <div class="card-header repmatch-card-header" role="tab" id="heading2">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+          * As repúblicas anúnciadas, são de confiança?
+        </a>
+      </h5>
+    </div>
+    <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordion">
+      <div class="card-body">
+        Todas as repúblicas que são anunciadas, nós entramos em contato e um de nossos colaboradores vai até a República para avaliar a mesma.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header repmatch-card-header" role="tab" id="heading3">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+          * Posso anunciar quantas repúblicas?
+        </a>
+      </h5>
+    </div>
+    <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordion">
+      <div class="card-body">
+        Sim, não temos limites de anúncios.
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,10 @@
 @import "cores";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+.container{
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+}
 
 .titleOrange {
   color: $theme-button-orange;
