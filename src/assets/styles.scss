@@ -1,6 +1,10 @@
 @import "cores";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .container{
   padding-top: 10vh;
   padding-bottom: 20vh;
