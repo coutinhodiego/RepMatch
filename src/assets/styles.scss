@@ -21,6 +21,12 @@ body {
 .btn-repmatch{
   background-color: $theme-button-orange;
   color: white;
+  border-color: $theme-button-orange;
+}
+
+.btn-repmatch:hover {
+  background-color: #3C3C3B;
+  border-color: #3C3C3B;
 }
 
 
