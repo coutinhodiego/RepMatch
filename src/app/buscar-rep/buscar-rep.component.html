@@ -81,18 +81,38 @@
       <div class="modal-body">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-5 text-center">
+            <div class="col-xs-12 col-md-6 text-center">
               <img src="https://scontent.fcgh11-1.fna.fbcdn.net/v/t1.0-9/14908224_1874132076140142_6196036043697297845_n.png?oh=d9cd2ab3bcade8ea9d9ef36c200801e5&oe=5A6EDCEB" class="imgModal" alt="">
-              <label class="mt-2 mb-0">Responsável</label>
-              <p class="text-center">{{selecionado.responsavel}}</p>
-              <label class="mb-0">Telefone</label>
-              <p class="text-center">{{selecionado.telefone}}</p>
             </div>
-            <div class="col-md-7">
-              <p class="bold">Endereço:{{selecionado.endereco}}</p>
-              <p class="bold">Bairro:{{selecionado.bairro}}</p>
-              <p class="bold">Descrição:{{selecionado.descricao}}</p>
-              <p class="bold">Vagas Disponíveis:{{selecionado.vagas}}</p>
+            <div class="col-xs-12 col-md-6">
+              <form>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="bold">Responsável</label>
+                    <p class="text-center">{{selecionado.responsavel}}</p>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="bold">Telefone</label>
+                    <p class="text-center">{{selecionado.telefone}}</p>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="bold">Endereço</label>
+                    <p class="text-center">{{selecionado.endereco}}</p>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="bold">Bairro</label>
+                    <p class="text-center">{{selecionado.bairro}}</p>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="bold">Descrição</label>
+                    <p class="text-center">{{selecionado.descricao}}</p>
+                  </div>
+                  <div class="col-md-12">
+                    <label class="bold">Vagas Disponíveis</label>
+                    <p class="text-center">{{selecionado.vagas}}</p>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
