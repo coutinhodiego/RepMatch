@@ -10,6 +10,10 @@
       <input type="text" class="form-control" [(ngModel)]="modelo.nome" placeholder="Nome da Republica" name="nome">
     </div>
     <div class="col-md-4">
+      <label>Responsavel</label>
+      <input type="text" class="form-control" [(ngModel)]="modelo.responsavel" placeholder="Responsavel" name="responsavel">
+    </div>
+    <div class="col-md-4">
       <label>Telefone</label>
       <input type="text" class="form-control" [(ngModel)]="modelo.telefone" placeholder="Telefone" name="telefone">
     </div>
@@ -19,7 +23,7 @@
     </div>
     <div class="form-group col-md-4">
       <label>Bairro</label>
-      <input type="text" class="form-control"  [(ngModel)]="modelo.bairro" placeholder="Bairro" name="bairro">
+      <input type="text" class="form-control" [(ngModel)]="modelo.bairro" placeholder="Bairro" name="bairro">
     </div>
     <div class="form-group col-md-6">
       <label>Vagas disponiveis</label>
@@ -33,11 +37,15 @@
     </div>
     <div class="form-group col-md-6">
       <label>Valor</label>
-      <input type="text" class="form-control" [(ngModel)]="modelo.valor"  name="valor">
+      <input type="text" class="form-control" [(ngModel)]="modelo.valor" name="valor">
     </div>
     <div class="form-group col-md-12">
       <label for="exampleFormControlTextarea1">Descrição</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" [(ngModel)]="modelo.descricao" rows="3" name="descricao"></textarea>
+    </div>
+    <div class="form-group col-md-6">
+      <label>Imagem</label>
+      <input type="text" class="form-control" [(ngModel)]="modelo.img" name="img">
     </div>
     <div class="form-group col-md-12 text-right">
       <button type="submit" (click)="salvar()" class="btn btn-repmatch">Anunciar</button>

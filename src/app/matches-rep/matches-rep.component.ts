@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class MatchesRepComponent implements OnInit {
 
   lista;
+  selecionado;
   modelo = {
     bairro : ''
   }
@@ -28,6 +29,16 @@ export class MatchesRepComponent implements OnInit {
     .post('http://localhost:3000/match/republicas', this.modelo)
     .subscribe( res => {
       this.lista = res;
+    })
+  }
+
+  verModal(id){
+    console.log(id)
+    this.http
+    .get(`http://localhost:3000/republicas/${id}`)
+    .subscribe( res => {
+      this.selecionado = res;
+      console.log(this.selecionado)
     })
   }
 

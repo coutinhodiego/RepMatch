@@ -35,6 +35,15 @@ app.get('/republicas', (req, res) =>{
   })
 });
 
+app.get('/republicas/:id', (req, res) =>{
+  RepublicaSchema.findById(req.params.id, (err, response) => {
+    if(err){
+      return res.send(err, 400)
+    }
+    res.send(response);
+  })
+});
+
 app.post('/anunciarep', (req, res) => {
   let republica = new RepublicaSchema(req.body)
   console.log(republica);

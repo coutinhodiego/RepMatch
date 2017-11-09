@@ -6,66 +6,100 @@
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3 float-left">
     <div>
-      <img class="card-img-top p-3" src="https://scontent.fcgh11-1.fna.fbcdn.net/v/t1.0-9/14908224_1874132076140142_6196036043697297845_n.png?oh=d9cd2ab3bcade8ea9d9ef36c200801e5&oe=5A6EDCEB" alt="Card image cap">
+      <img class="card-img-top p-3" src="assets/images/rep1.jpg" alt="Card image cap">
       <div class="card-body">
         <ul class="card-text p-0">
           <li>
-            <span class="labelNome">Nome: </span>{{rep.nome}}
+            <span class="labelNome">Nome: </span>{{lista[0].nome}}
           </li>
           <li>
-            <span>Endereço: </span>{{rep.endereco}}
+            <span>Endereço: </span>{{lista[0].endereco}}
           </li>
           <li>
-            <span>Valor: </span>{{rep.valor}}
+            <span>Valor: </span>{{lista[0].valor}}
           </li>
         </ul>
       </div>
-      <div class="card-footer text-center">
-        <a href="#" class="btn btn-repmatch">Visualizar</a>
+      <div class="col-12 p-1 left">
+        <a href="#verModal" class="btn btn-primary btn-repmatch" data-toggle="modal" (click)="verModal(lista[0]._id)">Visualizar</a>
       </div>
     </div>
   </div>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3 float-left">
     <div>
-      <img class="card-img-top p-3" src="https://scontent.fcgh11-1.fna.fbcdn.net/v/t1.0-9/14908224_1874132076140142_6196036043697297845_n.png?oh=d9cd2ab3bcade8ea9d9ef36c200801e5&oe=5A6EDCEB" alt="Card image cap">
+      <img class="card-img-top p-3" src="assets/images/rep2.jpg" alt="Card image cap">
       <div class="card-body">
         <ul class="card-text p-0">
           <li>
-            <span class="labelNome">Nome: </span>{{rep.nome}}
+            <span class="labelNome">Nome: </span>{{lista[1].nome}}
           </li>
           <li>
-            <span>Endereço: </span>{{rep.endereco}}
+            <span>Endereço: </span>{{lista[1].endereco}}
           </li>
           <li>
-            <span>Valor: </span>{{rep.valor}}
+            <span>Valor: </span>{{lista[1].valor}}
           </li>
         </ul>
       </div>
-      <div class="card-footer text-center">
-        <a href="#" class="btn btn-repmatch">Visualizar</a>
+      <div class="col-12 p-1 left">
+        <a href="#verModal" class="btn btn-primary btn-repmatch" data-toggle="modal" (click)="verModal(lista[1]._id)">Visualizar</a>
       </div>
     </div>
   </div>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 mt-3 float-left">
     <div>
-      <img class="card-img-top p-3" src="https://scontent.fcgh11-1.fna.fbcdn.net/v/t1.0-9/14908224_1874132076140142_6196036043697297845_n.png?oh=d9cd2ab3bcade8ea9d9ef36c200801e5&oe=5A6EDCEB" alt="Card image cap">
+      <img class="card-img-top p-3" src="assets/images/rep3.jpg" alt="Card image cap">
       <div class="card-body">
         <ul class="card-text p-0">
           <li>
-            <span class="labelNome">Nome: </span>{{rep.nome}}
+            <span class="labelNome">Nome: </span>{{lista[2].nome}}
           </li>
           <li>
-            <span>Endereço: </span>{{rep.endereco}}
+            <span>Endereço: </span>{{lista[2].endereco}}
           </li>
           <li>
-            <span>Valor: </span>{{rep.valor}}
+            <span>Valor: </span>{{lista[2].valor}}
           </li>
         </ul>
       </div>
-      <div class="card-footer text-center">
-        <a href="#" class="btn btn-repmatch">Visualizar</a>
+      <div class="col-12 p-1 left">
+        <a href="#verModal" class="btn btn-primary btn-repmatch" data-toggle="modal" (click)="verModal(lista[2]._id)">Visualizar</a>
       </div>
     </div>
   </div>
 </div>
 
+<div class="modal" id="verModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">{{selecionado.nome}}</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5 text-center">
+              <img src="https://scontent.fcgh11-1.fna.fbcdn.net/v/t1.0-9/14908224_1874132076140142_6196036043697297845_n.png?oh=d9cd2ab3bcade8ea9d9ef36c200801e5&oe=5A6EDCEB" class="imgModal" alt="">
+              <label class="mt-2 mb-0">Responsável</label>
+              <p class="text-center">{{selecionado.responsavel}}</p>
+              <label class="mb-0">Telefone</label>
+              <p class="text-center">{{selecionado.telefone}}</p>
+            </div>
+            <div class="col-md-7">
+              <p class="bold">Endereço:{{selecionado.endereco}}</p>
+              <p class="bold">Bairro:{{selecionado.bairro}}</p>
+              <p class="bold">Descrição:{{selecionado.descricao}}</p>
+              <p class="bold">Vagas Disponíveis:{{selecionado.vagas}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
