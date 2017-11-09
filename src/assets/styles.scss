@@ -21,12 +21,18 @@ body {
 .btn-repmatch{
   background-color: $theme-button-orange;
   color: white;
+  border-color: $theme-button-orange;
+}
+
+.btn-repmatch:hover {
+  background-color: #3C3C3B;
+  border-color: #3C3C3B;
 }
 
 
 .labelNome{
-  color: $theme-button-orange;
-  font-weight: 500;
+  color: #3C3C3B;
+  font-weight: 700;
 }
 
 .card-img-repmatch{
@@ -36,4 +42,9 @@ body {
 
 .card-img-repmatch-matches{
   width: 100%;
+}
+
+h2 {
+  font-weight: 700;
+  color: #E84E0F;
 }
