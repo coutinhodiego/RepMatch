@@ -11,10 +11,19 @@
   vertical-align: middle;;
 }
 
-a.menu:visited, a.menu:link {
+a.nav-link:visited, a.menu:link {
   text-decoration: none;
   color: #3C3C3B}
-a.menu:hover, a.menu:active {
-  text-decoration:none;
-  color: #E84E0F;
+
+
+.nav-link{
+  font-weight: 700;
+  font-family: 'open sans';
+}
+
+
+.nav-item{
+  a:hover, a:active{
+    color: #E84E0F;
+  }
 }
