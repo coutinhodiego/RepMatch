@@ -7,13 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
   }
 
 }
 
-var shiftWindow = function() { scrollBy(0, -60) };
+let shiftWindow = function() { scrollBy(0, -60); };
 if (location.hash) shiftWindow();
-window.addEventListener("hashchange", shiftWindow);
+window.addEventListener('hashchange', shiftWindow);
