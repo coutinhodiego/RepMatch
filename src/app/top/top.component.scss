@@ -23,7 +23,11 @@ a.nav-link:visited, a.menu:link {
 
 
 .nav-item{
-  a:hover, a:active{
+  a:hover{
     color: #E84E0F;
   }
+}
+
+a.nav-link.active{
+  color: #E84E0F !important;
 }
